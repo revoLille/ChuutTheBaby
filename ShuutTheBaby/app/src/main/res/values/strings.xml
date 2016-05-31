@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Chuut The Baby</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="header_text">Choose your activity</string>
+
+    <string name="menu_play">Play</string>
+    <string name="menu_rec">Record</string>
+    <string name="menu_animation">Night light mode</string>
+    <string name="menu_auto">Auto mode config</string>
+    <string name="menu_babyphone">Babyphone mode</string>
+    <string name="menu_video">Video mode</string>
+    <string name="menu_about">About</string>
+
+    <string name="title_main">Launch a random lullaby :</string>
+    <string name="title_rec">Record a lullaby :</string>
+
+    <string name="button_stop">Stop, Im not sleepy</string>
+    <string name="hold_on"> Hold On ! </string>
+
+    <string name="stop_record">Stop Record</string>
+    <string name="stop_play">Stop Play</string>
+    <string name="play_record">Play Record</string>
+
+    <string name="content_about">
+        Licenced under Creative Commons (CC BY 3.0 FR)
+
+        You are free to:
+
+        Share — copy and redistribute the material in any medium or format
+        Adapt — remix, transform, and build upon the material
+        for any purpose, even commercially.
+        The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+        Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+        Authors :
+        - Clothilde Linne.
+        - Anh-Quang Dam.
+        - Raphaël Bouqueau.
+        - Pierre Florquin.
+    </string>
+
+</resources>

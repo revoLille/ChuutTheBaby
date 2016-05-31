@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/night_reduced"
+    tools:context="com.projetastonlille.fr.shuutthebaby.Menu">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:text="@string/title_main"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sheepplay"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/layout_corner"
+        android:id="@+id/imageButton"
+        android:layout_above="@+id/spinner"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/spinner"
+        android:onClick="playMusic" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:background="@drawable/layout_corner"
+        android:id="@+id/spinner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="173dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_stop"
+        android:textColor="@color/colorTextYellow"
+        android:background="@drawable/layout_corner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:onClick="stopMusic"
+        android:id="@+id/recButton"
+        android:layout_marginTop="77dp"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/layout_corner"
+        android:text="@string/hold_on"
+        android:id="@+id/playButton"
+        android:onClick="pause"
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/recButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
