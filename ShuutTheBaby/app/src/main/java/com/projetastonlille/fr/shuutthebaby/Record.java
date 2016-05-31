@@ -15,21 +15,21 @@ import java.io.IOException;
 public class Record extends Menu {
     MediaRecorder recorder;
     MediaPlayer player;
-    String LOG_TAG = "enregistrer";
     private String fileRecord = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
+
+    }
+
+    public void startRecording(View view) {
         recorder = new MediaRecorder();
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
         recorder.setOutputFile(fileRecord);
-    }
-
-    public void startRecording(View view) {
         try {
             recorder.prepare();
 
