@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/night_reduced"
+    tools:context="com.projetastonlille.fr.shuutthebaby.Menu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:text="@string/register_plzRegister"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewRegister" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/login_Login"
+        android:ems="10"
+        android:id="@+id/nameRegister"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_Pwd"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwdRegister"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:layout_below="@+id/nameRegister"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:text="@string/register_confirm"
+        android:id="@+id/textViewRegisterConfirm"
+        android:layout_alignBottom="@+id/pwdRegisterConfirm"
+        android:layout_toStartOf="@+id/pwdRegisterConfirm" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_Pwd"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwdRegisterConfirm"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:layout_below="@+id/pwdRegister"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_email"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailRegister"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:layout_below="@+id/pwdRegisterConfirm"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:text="@string/register_firstName"
+        android:ems="10"
+        android:id="@+id/firstNameRegister"
+        android:layout_below="@+id/emailRegister"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:text="@string/register_lastName"
+        android:ems="10"
+        android:id="@+id/lastNameRegister"
+        android:layout_below="@+id/firstNameRegister"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:text="@string/register_firstNameChild"
+        android:ems="10"
+        android:id="@+id/childFirstNameRegister"
+        android:layout_below="@+id/lastNameRegister"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:text="@string/register_birthdayChild"
+        android:ems="10"
+        android:id="@+id/childBirthDay"
+        android:layout_below="@+id/childFirstNameRegister"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextYellow"
+        android:text="@string/register_sexChild"
+        android:id="@+id/textViewChildSex"
+        android:layout_below="@+id/childBirthDay"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewChildSex"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layout_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textViewRegister"
+        android:layout_alignStart="@+id/textViewRegister">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_male"
+            android:checked="true"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female"
+            android:layout_gravity="center_horizontal" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

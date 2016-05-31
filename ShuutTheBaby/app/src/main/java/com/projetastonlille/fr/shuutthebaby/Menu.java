@@ -31,5 +31,23 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Button buttonNightLight = (Button) findViewById(R.id.nightLightButton);
+        buttonNightLight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,NightLight.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonAbout = (Button) findViewById(R.id.aboutButton);
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,About.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

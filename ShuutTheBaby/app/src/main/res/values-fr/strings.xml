@@ -15,6 +15,7 @@
     <string name="menu_auto">Config mode auto</string>
     <string name="menu_babyphone">Mode babyphone</string>
     <string name="menu_video">Mode video</string>
+    <string name="menu_logIn">Se Logger</string>
     <string name="menu_about">A propos</string>
 
     <string name="title_main">Lancez une berçeuse au hasard :</string>
@@ -26,6 +27,20 @@
     <string name="stop_record">Stop Record</string>
     <string name="stop_play">Stop Play</string>
     <string name="play_record">Play Record</string>
+
+    <string name="register_plzRegister">Veuillez vous enregistrer :</string>
+    <string name="login_plzLogin">Veuillez vous logger :</string>
+    <string name="login_Name">Nom</string>
+    <string name="login_Pwd">Mot de Passe</string>
+    <string name="register_email">e-mail</string>
+    <string name="register_firstName">Prénom du Parent</string>
+    <string name="register_lastName">Nom du Parent</string>
+    <string name="register_firstNameChild">Prénom de votre enfant</string>
+    <string name="register_birthdayChild">Anniversaire de votre enfant</string>
+    <string name="register_sexChild">Garçon ou Fille?</string>
+    <string name="register_confirm">Confirmer :</string>
+    <string name="radio_male">Garcon</string>
+    <string name="radio_female">Fille</string>
 
     <!--<string name="content_about">
         Licencé sous Creative Commons (CC BY 3.0 FR)

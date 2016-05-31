@@ -14,6 +14,7 @@
     <string name="menu_auto">Auto mode config</string>
     <string name="menu_babyphone">Babyphone mode</string>
     <string name="menu_video">Video mode</string>
+    <string name="menu_logIn">Log In</string>
     <string name="menu_about">About</string>
 
     <string name="title_main">Launch a random lullaby :</string>
@@ -25,6 +26,24 @@
     <string name="stop_record">Stop Record</string>
     <string name="stop_play">Stop Play</string>
     <string name="play_record">Play Record</string>
+
+    <string name="register_plzRegister">Please Register :</string>
+    <string name="login_plzLogin">Please Login :</string>
+    <string name="login_Login">Login</string>
+    <string name="login_Pwd">Password</string>
+    <string name="register_email">e-mail</string>
+    <string name="register_firstName">Parent first name</string>
+    <string name="register_lastName">Parent last name</string>
+    <string name="register_firstNameChild">Child first name</string>
+    <string name="register_birthdayChild">Child birthday</string>
+    <string name="register_sexChild">Boy or Girl?</string>
+    <string name="register_confirm">Confirm :</string>
+    <string name="radio_male">Boy</string>
+    <string name="radio_female">Girl</string>
+
+
+
+
 
     <string name="content_about">
         Licenced under Creative Commons (CC BY 3.0 FR)

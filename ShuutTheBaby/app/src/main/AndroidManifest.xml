@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".Play"></activity>
         <activity android:name=".Record"></activity>
+        <activity android:name=".NightLight"></activity>
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
