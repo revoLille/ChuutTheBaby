@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chuut The Baby</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Réglages</string>
+
+    <string name="header_text">Choisissez votre activité</string>
+
+    <string name="menu_play">Jouer</string>
+    <string name="menu_rec">Enregistrer</string>
+    <string name="menu_animation">Mode veilleuse</string>
+    <string name="menu_auto">Config mode auto</string>
+    <string name="menu_babyphone">Mode babyphone</string>
+    <string name="menu_video">Mode video</string>
+    <string name="menu_logIn">Se Logger</string>
+    <string name="menu_about">A propos</string>
+    <string name="menu_register">S enregistrer</string>
+
+    <string name="title_main">Lancez une berçeuse au hasard :</string>
+    <string name="title_rec">Enregistrez une berçeuse :</string>
+
+    <string name="button_stop">Je n ai pas envie de dormir</string>
+    <string name="hold_on"> Attends ! </string>
+
+    <string name="stop_record">Stop enregistrement</string>
+    <string name="start_play">Jouer</string>
+    <string name="start_record">Démarre enregistrement</string>
+
+    <string name="register_plzRegister">Veuillez vous enregistrer :</string>
+    <string name="login_plzLogin">Veuillez vous logger :</string>
+    <string name="login_Name">Nom</string>
+    <string name="login_Pwd">Mot de Passe</string>
+    <string name="register_email">e-mail</string>
+    <string name="register_firstName">Prénom du Parent</string>
+    <string name="register_lastName">Nom du Parent</string>
+    <string name="register_firstNameChild">Prénom de votre enfant</string>
+    <string name="register_birthdayChild">Anniversaire de votre enfant</string>
+    <string name="register_sexChild">Garçon ou Fille?</string>
+    <string name="register_confirm">Confirmer :</string>
+    <string name="radio_male">Garcon</string>
+    <string name="radio_female">Fille</string>
+
+    <!--<string name="content_about">
+        Licencé sous Creative Commons (CC BY 3.0 FR)
+
+        Vous êtes autorisé à :
+        Partager — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
+        Adapter — remixer, transformer et créer à partir du matériel
+        pour toute utilisation, y compris commerciale.
+        L'Offrant ne peut retirer les autorisations concédées par la licence tant que vous appliquez les termes de cette licence.
+
+        Attribution — Vous devez créditer l Œuvre, intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l Oeuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que l Offrant vous soutient ou soutient la façon dont vous avez utilisé son Oeuvre.
+
+        Auteurs :
+        - Clothilde Linne.
+        - Anh-Quang Dam.
+        - Raphaël Bouqueau.
+        - Pierre Florquin.
+    </string>-->
+
+</resources>
