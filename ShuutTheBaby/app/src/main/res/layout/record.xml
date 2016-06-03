@@ -29,7 +29,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="@string/Start recording"
+        android:text="@string/start_record"
         android:id="@+id/button9"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -42,7 +42,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="@string/Start playing"
+        android:text="@string/start_play"
         android:id="@+id/button10"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"

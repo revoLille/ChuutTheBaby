@@ -21,6 +21,8 @@
         <activity android:name=".Record"></activity>
         <activity android:name=".NightLight"></activity>
         <activity android:name=".About"></activity>
+        <activity android:name=".LogIn"></activity>
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>

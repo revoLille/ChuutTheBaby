@@ -13,6 +13,8 @@ import android.util.Log;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
 
+import java.io.IOException;
+
 /**
  * Created by Linne on 02/06/2016.
  */

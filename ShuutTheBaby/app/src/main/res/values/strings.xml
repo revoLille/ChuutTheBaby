@@ -16,6 +16,7 @@
     <string name="menu_video">Video mode</string>
     <string name="menu_logIn">Log In</string>
     <string name="menu_about">About</string>
+    <string name="menu_register">Register</string>
 
     <string name="title_main">Launch a random lullaby :</string>
     <string name="title_rec">Record a lullaby :</string>
@@ -24,8 +25,8 @@
     <string name="hold_on"> Hold On ! </string>
 
     <string name="stop_record">Stop Record</string>
-    <string name="stop_play">Stop Play</string>
-    <string name="play_record">Play Record</string>
+    <string name="start_play">Start Play</string>
+    <string name="start_record">Start Record</string>
 
     <string name="register_plzRegister">Please Register :</string>
     <string name="login_plzLogin">Please Login :</string>

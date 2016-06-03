@@ -17,6 +17,7 @@
     <string name="menu_video">Mode video</string>
     <string name="menu_logIn">Se Logger</string>
     <string name="menu_about">A propos</string>
+    <string name="menu_register">S enregistrer</string>
 
     <string name="title_main">Lancez une berçeuse au hasard :</string>
     <string name="title_rec">Enregistrez une berçeuse :</string>
@@ -24,9 +25,9 @@
     <string name="button_stop">Je n ai pas envie de dormir</string>
     <string name="hold_on"> Attends ! </string>
 
-    <string name="stop_record">Stop Record</string>
-    <string name="stop_play">Stop Play</string>
-    <string name="play_record">Play Record</string>
+    <string name="stop_record">Stop enregistrement</string>
+    <string name="start_play">Jouer</string>
+    <string name="start_record">Démarre enregistrement</string>
 
     <string name="register_plzRegister">Veuillez vous enregistrer :</string>
     <string name="login_plzLogin">Veuillez vous logger :</string>

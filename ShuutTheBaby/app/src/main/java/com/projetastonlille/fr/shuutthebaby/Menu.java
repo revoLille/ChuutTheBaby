@@ -40,6 +40,15 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Button buttonLogin = (Button) findViewById(R.id.logInButton);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,LogIn.class);
+                startActivity(intent);
+            }
+        });
+
         Button buttonAbout = (Button) findViewById(R.id.aboutButton);
         buttonAbout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,5 +58,22 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Button buttonRegister = (Button) findViewById(R.id.registerButton);
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,Register.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 }
+
+
+
+

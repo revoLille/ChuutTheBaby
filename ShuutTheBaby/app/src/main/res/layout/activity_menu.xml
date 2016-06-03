@@ -100,7 +100,7 @@
         android:textColor="@color/colorTextYellow"
         android:layout_below="@+id/babyPhoneButton"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_alignEnd="@+id/videoButton" />
 
     <Button
@@ -112,8 +112,24 @@
         android:paddingRight="10dp"
         android:background="@drawable/layout_corner"
         android:textColor="@color/colorTextYellow"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="28dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logInButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/menu_register"
+        android:id="@+id/registerButton"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/layout_corner"
+        android:textColor="@color/colorTextYellow"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/aboutButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
