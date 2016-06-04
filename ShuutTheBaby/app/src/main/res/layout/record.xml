@@ -23,33 +23,45 @@
         android:padding="20dp"
         android:scaleType="fitCenter"
         android:background="@drawable/layout_corner"
-        android:id="@+id/imageButton" />
+        android:id="@+id/imageButton"
+        android:onClick="startRecording" />
 
 
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="@string/start_record"
+        android:text="Stop record"
         android:id="@+id/button9"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/layout_corner"
+        android:textColor="@color/colorTextYellow"
+        android:layout_marginBottom="102dp"
+        android:onClick="stopRecording"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/mRecordButton"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:background="@drawable/layout_corner"
         android:textColor="@color/colorTextYellow"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="35dp" />
+        android:onClick="startPlaying"
+        android:text="record" />
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="@string/start_play"
-        android:id="@+id/button10"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@drawable/layout_corner"
-        android:textColor="@color/colorTextYellow"
-        android:layout_alignTop="@+id/button9"
-        android:layout_alignParentEnd="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop playing"
+        android:id="@+id/mPlayButton"
+        android:layout_alignTop="@+id/mRecordButton"
+        android:layout_alignParentEnd="true"
+        android:onClick="stopPlaying" />
 
 
 </RelativeLayout>
