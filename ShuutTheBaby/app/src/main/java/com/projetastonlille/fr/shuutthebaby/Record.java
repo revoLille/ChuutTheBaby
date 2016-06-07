@@ -78,7 +78,7 @@ public class Record extends Menu {
             success = folder.mkdir();
         }
         mFileName = Environment.getExternalStorageDirectory().toString() +File.separator + "Chuutthebaby" + File.separator ;
-        mFileName += "/song"+count+".3gp";
+        mFileName += "/babySong"+count+".3gp";
 
     }
 
