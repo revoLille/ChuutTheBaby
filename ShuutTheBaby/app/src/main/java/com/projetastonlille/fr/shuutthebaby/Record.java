@@ -13,6 +13,8 @@ import android.util.Log;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -21,7 +23,7 @@ import java.io.IOException;
 public class Record extends Menu {
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
-
+    private static int count=0;
 
     private MediaRecorder mRecorder = null;
     private MediaPlayer   mPlayer = null;
@@ -46,6 +48,7 @@ public class Record extends Menu {
 
     // Methods mediaRecord
     public void startRecording(View view) {
+        count++;
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
@@ -69,8 +72,14 @@ public class Record extends Menu {
 
 
     public Record() {
-        mFileName = Environment.getExternalStorageDirectory().getAbsolutePath();
-        mFileName += "/audiorecordtest.3gp";
+        File folder =new File(Environment.getExternalStorageDirectory() + File.separator + "Chuutthebaby");
+        boolean success = true;
+        if (!folder.exists()) {
+            success = folder.mkdir();
+        }
+        mFileName = Environment.getExternalStorageDirectory().toString() +File.separator + "Chuutthebaby" + File.separator ;
+        mFileName += "/song"+count+".3gp";
+
     }
 
     protected void onCreate(Bundle savedInstanceState) {

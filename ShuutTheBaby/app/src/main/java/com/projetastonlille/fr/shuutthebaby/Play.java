@@ -30,6 +30,7 @@ public class Play extends Menu{
     }
     public void stopMusic(View view) {
         mySound.pause();
+        paused = 0;
     }
     //METHOD() Pause à linstant INT et on recupere cette valer avec le .getCurrentPosition.
     public void pause(View view) {
