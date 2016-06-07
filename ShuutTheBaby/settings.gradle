@@ -1,1 +1,1 @@
-include ':app', ':servlet'
+include ':app'
