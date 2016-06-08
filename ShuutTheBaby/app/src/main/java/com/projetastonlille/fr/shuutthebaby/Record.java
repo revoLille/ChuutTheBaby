@@ -1,21 +1,21 @@
 package com.projetastonlille.fr.shuutthebaby;
 
-import android.app.Activity;
-import android.widget.LinearLayout;
+
 import android.os.Bundle;
 import android.os.Environment;
-import android.view.ViewGroup;
-import android.widget.Button;
+
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.content.Context;
 import android.util.Log;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
+import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.Time;
+import java.util.Calendar;
+import java.util.Date;
+
 
 /**
  * Created by Linne on 02/06/2016.
@@ -23,7 +23,8 @@ import java.io.IOException;
 public class Record extends Menu {
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
-    private static int count=0;
+    private static int count=1;
+    Toast toast;
 
     private MediaRecorder mRecorder = null;
     private MediaPlayer   mPlayer = null;
@@ -31,6 +32,8 @@ public class Record extends Menu {
 
     // Methods Mediaplayer
     public void startPlaying(View view) {
+        toast = Toast.makeText(getApplicationContext(),"Play record",Toast.LENGTH_LONG);
+        toast.show();
         mPlayer = new MediaPlayer();
         try {
             mPlayer.setDataSource(mFileName);
@@ -48,8 +51,11 @@ public class Record extends Menu {
 
     // Methods mediaRecord
     public void startRecording(View view) {
-        count++;
+        toast = Toast.makeText(getApplicationContext(),"Recording",Toast.LENGTH_LONG);
+        toast.show();
+
         mRecorder = new MediaRecorder();
+        count++;
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mRecorder.setOutputFile(mFileName);
@@ -65,6 +71,8 @@ public class Record extends Menu {
     }
 
     public void stopRecording(View view) {
+        toast = Toast.makeText(getApplicationContext(),"Stopped",Toast.LENGTH_SHORT);
+        toast.show();
         mRecorder.stop();
         mRecorder.release();
         mRecorder = null;
@@ -77,16 +85,15 @@ public class Record extends Menu {
         if (!folder.exists()) {
             success = folder.mkdir();
         }
-        mFileName = Environment.getExternalStorageDirectory().toString() +File.separator + "Chuutthebaby" + File.separator ;
-        mFileName += "/babySong"+count+".3gp";
 
+        mFileName = Environment.getExternalStorageDirectory().toString() + File.separator + "Chuutthebaby" + File.separator ;
+        mFileName += "/babySong"+count+".3gp";
     }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
     }
-
 
 }
 
