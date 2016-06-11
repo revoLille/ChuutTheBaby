@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Time;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -23,16 +24,17 @@ import java.util.Date;
 public class Record extends Menu {
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
-    private static int count=1;
+    private static int count = 1;
+    String formatedDate;
     Toast toast;
 
     private MediaRecorder mRecorder = null;
-    private MediaPlayer   mPlayer = null;
+    private MediaPlayer mPlayer = null;
 
 
     // Methods Mediaplayer
     public void startPlaying(View view) {
-        toast = Toast.makeText(getApplicationContext(),"Play record",Toast.LENGTH_LONG);
+        toast = Toast.makeText(getApplicationContext(), "Play record", Toast.LENGTH_LONG);
         toast.show();
         mPlayer = new MediaPlayer();
         try {
@@ -51,11 +53,13 @@ public class Record extends Menu {
 
     // Methods mediaRecord
     public void startRecording(View view) {
-        toast = Toast.makeText(getApplicationContext(),"Recording",Toast.LENGTH_LONG);
+        toast = Toast.makeText(getApplicationContext(), "Recording", Toast.LENGTH_LONG);
         toast.show();
+        Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        formatedDate = dateFormat.format(date);
 
         mRecorder = new MediaRecorder();
-        count++;
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mRecorder.setOutputFile(mFileName);
@@ -71,7 +75,7 @@ public class Record extends Menu {
     }
 
     public void stopRecording(View view) {
-        toast = Toast.makeText(getApplicationContext(),"Stopped",Toast.LENGTH_SHORT);
+        toast = Toast.makeText(getApplicationContext(), "Stopped", Toast.LENGTH_SHORT);
         toast.show();
         mRecorder.stop();
         mRecorder.release();
@@ -80,20 +84,21 @@ public class Record extends Menu {
 
 
     public Record() {
-        File folder =new File(Environment.getExternalStorageDirectory() + File.separator + "Chuutthebaby");
+        File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "Chuutthebaby");
         boolean success = true;
         if (!folder.exists()) {
             success = folder.mkdir();
         }
 
-        mFileName = Environment.getExternalStorageDirectory().toString() + File.separator + "Chuutthebaby" + File.separator ;
-        mFileName += "/babySong"+count+".3gp";
+        mFileName = Environment.getExternalStorageDirectory().toString() + File.separator + "Chuutthebaby" + File.separator;
+        mFileName += "/babySong" + formatedDate + ".3gp";
     }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
     }
+
 
 }
 

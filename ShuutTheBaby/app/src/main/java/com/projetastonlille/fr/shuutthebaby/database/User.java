@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 /**
  * Created by Pierre on 09/06/2016.
  */
-public class User extends Database{
+/*public class User extends Database{
 
     public User(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -17,4 +17,4 @@ public class User extends Database{
         super(context, name, factory, version, errorHandler);
     }
 
-}
+}*/
