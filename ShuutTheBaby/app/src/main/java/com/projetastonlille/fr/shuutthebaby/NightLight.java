@@ -15,23 +15,17 @@ import java.io.IOException;
 /**
  * Created by Quang on 30/05/2016.
  */
-public class NightLight extends Menu  implements View.OnClickListener {
+public class NightLight extends Menu  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nightlight);
 
-        Button btn = (Button) findViewById(R.id.rotate);
-        btn.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
         ImageView animationTarget = (ImageView) this.findViewById(R.id.testImage);
 
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.rotate_around_center_point);
         animationTarget.startAnimation(animation);
-
     }
+
 }
