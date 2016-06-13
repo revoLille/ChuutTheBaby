@@ -25,7 +25,6 @@ public class Record extends Menu {
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
     private static int count = 1;
-    String formatedDate;
     Toast toast;
 
     private MediaRecorder mRecorder = null;
@@ -55,10 +54,6 @@ public class Record extends Menu {
     public void startRecording(View view) {
         toast = Toast.makeText(getApplicationContext(), "Recording", Toast.LENGTH_LONG);
         toast.show();
-        Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-        formatedDate = dateFormat.format(date);
-
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
@@ -77,11 +72,11 @@ public class Record extends Menu {
     public void stopRecording(View view) {
         toast = Toast.makeText(getApplicationContext(), "Stopped", Toast.LENGTH_SHORT);
         toast.show();
+        count++;
         mRecorder.stop();
         mRecorder.release();
         mRecorder = null;
     }
-
 
     public Record() {
         File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "Chuutthebaby");
@@ -91,14 +86,12 @@ public class Record extends Menu {
         }
 
         mFileName = Environment.getExternalStorageDirectory().toString() + File.separator + "Chuutthebaby" + File.separator;
-        mFileName += "/babySong" + formatedDate + ".3gp";
+        mFileName += "/babySong"+count+".3gp";
     }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
     }
-
-
 }
 
