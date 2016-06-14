@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 
 /**
- * Created by Quang on 30/05/2016.
+ * Created by Pierre on 30/05/2016.
  */
 public class Register extends Menu{
 
