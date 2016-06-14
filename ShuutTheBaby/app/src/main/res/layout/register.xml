@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:inputType="textPersonName"
-        android:text="@string/login_Login"
+        android:hint="@string/login_Login"
         android:ems="10"
         android:id="@+id/nameRegister"
         android:paddingLeft="10dp"
@@ -37,7 +37,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="@string/login_Pwd"
+        android:hint="@string/login_Pwd"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/pwdRegister"
@@ -61,7 +61,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="@string/login_Pwd"
+        android:hint="@string/login_Pwd"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/pwdRegisterConfirm"
@@ -76,7 +76,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="@string/register_email"
+        android:hint="@string/register_email"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/emailRegister"
@@ -97,7 +97,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:text="@string/register_firstName"
+        android:hint="@string/register_firstName"
         android:ems="10"
         android:id="@+id/firstNameRegister"
         android:layout_below="@+id/emailRegister"
@@ -112,7 +112,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:text="@string/register_lastName"
+        android:hint="@string/register_lastName"
         android:ems="10"
         android:id="@+id/lastNameRegister"
         android:layout_below="@+id/firstNameRegister"
@@ -127,7 +127,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:text="@string/register_firstNameChild"
+        android:hint="@string/register_firstNameChild"
         android:ems="10"
         android:id="@+id/childFirstNameRegister"
         android:layout_below="@+id/lastNameRegister"
@@ -142,9 +142,9 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:text="@string/register_birthdayChild"
+        android:hint="@string/register_birthdayChild"
         android:ems="10"
-        android:id="@+id/childBirthDay"
+        android:id="@+id/childBirthday"
         android:layout_below="@+id/childFirstNameRegister"
         android:layout_centerHorizontal="true" />
 
@@ -154,7 +154,7 @@
         android:textColor="@color/colorTextYellow"
         android:text="@string/register_sexChild"
         android:id="@+id/textViewChildSex"
-        android:layout_below="@+id/childBirthDay"
+        android:layout_below="@+id/childBirthday"
         android:layout_centerHorizontal="true" />
 
     <RadioGroup
@@ -167,8 +167,8 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:layout_alignEnd="@+id/childBirthDay"
-        android:layout_alignStart="@+id/childBirthDay"
+        android:layout_alignEnd="@+id/childBirthday"
+        android:layout_alignStart="@+id/childBirthday"
         android:id="@+id/radioGroup">
 
         <RadioButton
