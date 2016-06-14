@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.projetastonlille.fr.shuutthebaby.babyphone.BabyPhone;
+
 public class Menu extends AppCompatActivity {
 
     @Override
@@ -39,6 +41,14 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button buttonbabyPhone = (Button) findViewById(R.id.babyPhoneButton);
+        buttonbabyPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,BabyPhone.class);
+                startActivity(intent);
+            }
+        });
 
         Button buttonLogin = (Button) findViewById(R.id.logInButton);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -66,11 +76,6 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 }
 

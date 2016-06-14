@@ -43,6 +43,7 @@
     <string name="register_confirm">Confirmer :</string>
     <string name="radio_male">Garcon</string>
     <string name="radio_female">Fille</string>
+    <string name="register_registerToDatabase">Enregistrez moi !</string>
 
     <!--<string name="content_about">
         Licencé sous Creative Commons (CC BY 3.0 FR)
