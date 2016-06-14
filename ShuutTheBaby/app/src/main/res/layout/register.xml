@@ -20,7 +20,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:text="@string/login_Login"
         android:ems="10"
@@ -36,7 +36,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/login_Pwd"
         android:inputType="textPassword"
         android:ems="10"
@@ -51,7 +51,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textColor="@color/colorTextYellow"
         android:text="@string/register_confirm"
         android:id="@+id/textViewRegisterConfirm"
@@ -60,7 +60,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/login_Pwd"
         android:inputType="textPassword"
         android:ems="10"
@@ -75,7 +75,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/register_email"
         android:inputType="textEmailAddress"
         android:ems="10"
@@ -90,7 +90,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -105,7 +105,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -120,7 +120,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -135,7 +135,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="date"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -160,32 +160,51 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:orientation="horizontal"
         android:layout_below="@+id/textViewChildSex"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:background="@drawable/layout_corner"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/textViewRegister"
-        android:layout_alignStart="@+id/textViewRegister">
+        android:layout_alignEnd="@+id/childBirthDay"
+        android:layout_alignStart="@+id/childBirthDay"
+        android:id="@+id/radioGroup">
 
         <RadioButton
             android:id="@+id/radioMale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/radio_male"
             android:checked="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorTextYellow"/>
 
         <RadioButton
             android:id="@+id/radioFemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/radio_female"
-            android:layout_gravity="center_horizontal" />
-
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorTextYellow"/>
     </RadioGroup>
 
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="@string/register_registerToDatabase"
+        android:id="@+id/registerToDatabaseButton"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/layout_corner"
+        android:textColor="@color/colorTextYellow"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
 
 </RelativeLayout>
