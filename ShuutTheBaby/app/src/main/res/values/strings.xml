@@ -23,6 +23,7 @@
 
     <string name="button_stop">Stop, Im not sleepy</string>
     <string name="hold_on"> Hold On ! </string>
+    <string name="spinner_title_play">Select a music</string>
 
     <string name="stop_record">Stop Record</string>
     <string name="start_play">Start Play</string>
@@ -42,6 +43,17 @@
     <string name="radio_male">Boy</string>
     <string name="radio_female">Girl</string>
 
+
+    <string name="sleepTimer">Sleep Timer</string>
+    <string name="disabled">Disabled</string>
+    <string name="time_1minute">1 Minute</string>
+    <string name="time_5minute">5 Minutes</string>
+    <string name="time_10minute">10 Minutes</string>
+    <string name="time_30minute">30 Minutes</string>
+    <string name="time_1hour">1 Hour</string>
+    <string name="time_2hour">2 Hours</string>
+    <string name="time_4hour">4 Hours</string>
+    <string name="time_8hour">8 Hours</string>
 
 
 

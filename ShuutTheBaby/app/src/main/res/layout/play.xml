@@ -35,18 +35,29 @@
         android:id="@+id/imageButton"
         android:layout_above="@+id/soundSpinner"
         android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/soundSpinner"
-        android:onClick="playMusic" />
+        android:onClick="playMusic"
+        android:layout_alignEnd="@+id/timeSpinner" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:prompt="@+id/spinner_title_play"
+        android:textColor="@color/colorTextYellow"
+        android:background="@drawable/layout_corner"
+        android:id="@+id/soundSpinner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="173dp"
+        android:layout_toStartOf="@+id/timeSpinner" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textColor="@color/colorTextYellow"
         android:background="@drawable/layout_corner"
-        android:id="@+id/soundSpinner"
+        android:id="@+id/timeSpinner"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="173dp" />
+        android:layout_marginBottom="173dp"
+        android:layout_toEndOf="@+id/playButton" />
 
     <Button
         android:layout_width="wrap_content"

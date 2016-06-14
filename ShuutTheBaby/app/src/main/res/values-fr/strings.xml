@@ -24,6 +24,7 @@
 
     <string name="button_stop">Je n ai pas envie de dormir</string>
     <string name="hold_on"> Attends ! </string>
+    <string name="spinner_title_play">Selectionnez une berçeuse</string>
 
     <string name="stop_record">Stop enregistrement</string>
     <string name="start_play">Jouer</string>
