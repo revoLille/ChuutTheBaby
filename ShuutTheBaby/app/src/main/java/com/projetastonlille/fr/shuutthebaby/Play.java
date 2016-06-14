@@ -45,34 +45,42 @@ public class Play extends Menu{
         _timeMap.put(getResources().getString(R.string.time_2hour), 1000*60*60*2);
         _timeMap.put(getResources().getString(R.string.time_4hour), 1000*60*60*4);
         _timeMap.put(getResources().getString(R.string.time_8hour), 1000*60*60*8);
-
+///Spinner pour le Timer
         final Spinner timeSpinner = (Spinner) findViewById(R.id.timeSpinner);
         List<String> times = new ArrayList<>(_timeMap.keySet());
         ArrayAdapter<String> timesAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, times);
         timesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         timeSpinner.setAdapter(timesAdapter);
-
-
+///Spinner pour les musiques
         final Spinner soundSpinner = (Spinner) findViewById(R.id.soundSpinner);
         List<String> names = new ArrayList<>(_soundMap.keySet());
-
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,names);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         soundSpinner.setAdapter(dataAdapter);
-
     }
 
-    public void playMusic(View view) {
+    public void playMusic(final View view) {
         final Spinner soundSpinner = (Spinner) findViewById(R.id.soundSpinner);
         String selectedSound = (String)soundSpinner.getSelectedItem();
         int id  = _soundMap.get(selectedSound);
 
-
+        final Spinner sleepTimeout = (Spinner) findViewById(R.id.timeSpinner);
+        String selectTimeout = (String)sleepTimeout.getSelectedItem();
+        int timeOut = _timeMap.get(selectTimeout);
         if(mySound==null){
 
             mySound = MediaPlayer.create(this,id);
             mySound.setLooping(true);//Boucle de la musique a coupler avec un Timer ?
             mySound.start();
+            if(timeOut>0){
+                _timer = new Timer();
+                _timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        mySound.stop();
+                    }
+                },(long)timeOut);
+            }
 
         }else if (!mySound.isPlaying()){
             mySound.seekTo(paused); // On cherche la valeur de paused pour relancer la musique a ce moment là.
