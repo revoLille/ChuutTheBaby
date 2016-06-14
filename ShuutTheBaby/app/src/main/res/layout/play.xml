@@ -33,17 +33,17 @@
         android:scaleType="fitCenter"
         android:background="@drawable/layout_corner"
         android:id="@+id/imageButton"
-        android:layout_above="@+id/spinner"
+        android:layout_above="@+id/soundSpinner"
         android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignEnd="@+id/soundSpinner"
         android:onClick="playMusic" />
 
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:textColor="@color/colorTextYellow"
         android:background="@drawable/layout_corner"
-        android:id="@+id/spinner"
+        android:id="@+id/soundSpinner"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="173dp" />
@@ -59,7 +59,7 @@
         android:onClick="stopMusic"
         android:id="@+id/recButton"
         android:layout_marginTop="77dp"
-        android:layout_alignTop="@+id/spinner"
+        android:layout_alignTop="@+id/soundSpinner"
         android:layout_alignStart="@+id/textView" />
 
     <Button
