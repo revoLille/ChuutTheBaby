@@ -43,32 +43,32 @@ public class Database extends SQLiteOpenHelper{
     private static final String DATABASE_CREATE = "create table "
             + TABLE_COMMENTS_USER
             + "(" + COLUMN_ID + " integer primary key autoincrement, "
-            + COLUMN_LOGIN + " VARCHAR(40) not null, "
-            + COLUMN_PASSWORD + " VARCHAR(20) not null, "
-            + COLUMN_EMAIL + " VARCHAR(80) not null, "
-            + COLUMN_FIRSTNAME + " VARCHAR(50), "
-            + COLUMN_LASTNAME + " VARCHAR(50) "
+            + COLUMN_LOGIN + " TEXT not null, "
+            + COLUMN_PASSWORD + " TEXT not null, "
+            + COLUMN_EMAIL + " TEXT not null, "
+            + COLUMN_FIRSTNAME + " TEXT, "
+            + COLUMN_LASTNAME + " TEXT "
             + "); "
             + "create table "
             + TABLE_COMMENTS_CHILD
             + "(" + COLUMN_ID + " integer primary key autoincrement, "
-            + COLUMN_FIRSTNAME_CHILD + " VARCHAR(50) not null, "
+            + COLUMN_FIRSTNAME_CHILD + " TEXT not null, "
             + COLUMN_BIRTHDAY + " DATE, "
-            + COLUMN_SEX + " ENUM('girl','boy'), "
+            + COLUMN_SEX + " integer, "//TODO verify the enum type :  there is no enum in sqlite only null, integer, real, text, blob http://www.sqlite.org/datatype3.html
             + COLUMN_USER_ID + " integer NOT NULL, "
             + " FOREIGN KEY ("+ COLUMN_USER_ID +") REFERENCES "+TABLE_COMMENTS_USER+" ("+COLUMN_ID+") "
             + "); "
             + "create table "
             + TABLE_COMMENTS_MUSIC
             + "(" + COLUMN_ID + " integer primary key autoincrement, "
-            + COLUMN_TITLE_MUSIC + " VARCHAR(150) not null, "
-            + COLUMN_CATEGORY_MUSIC + " ENUM('song','nursery rhyme', 'lullaby', 'story') "
+            + COLUMN_TITLE_MUSIC + " TEXT not null, "
+            + COLUMN_CATEGORY_MUSIC + " ENUM('song','nursery rhyme', 'lullaby', 'story') " //TODO verify the enum type :  there is no enum in sqlite only null, integer, real, text, blob http://www.sqlite.org/datatype3.html
             + "); "
             + "create table "
             + TABLE_COMMENTS_USER_HAS_MUSIC
             + "(" + COLUMN_USER_ID + " integer not null, "
             + COLUMN_MUSIC_ID + " integer not null, "
-            + COLUMN_CREATOR + " VARCHAR(50), "
+            + COLUMN_CREATOR + " TEXT, "
             + " FOREIGN KEY ("+COLUMN_USER_ID+") REFERENCES "+TABLE_COMMENTS_USER+" ("+COLUMN_ID+"), "
             + " FOREIGN KEY ("+COLUMN_MUSIC_ID+") REFERENCES "+TABLE_COMMENTS_MUSIC+" ("+COLUMN_ID+") "
             + "); " ;
