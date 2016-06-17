@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by pierre on 14/06/2016.
  */
@@ -63,6 +66,24 @@ public class UsersDataSource {
         return newUser;
     }
 
+    public void deleteUser (User user) {
+        int id = user.getId();
+        System.out.println("User deleted with id: " + id);
+        database.delete(Database.TABLE_COMMENTS_USER, Database.COLUMN_ID
+                + " = " + id, null);
+    }
 
+    public List<User> getAllUsers() {
+        List<User> users = new ArrayList<User>();
+        Cursor cursor = database.query(Database.TABLE_COMMENTS_USER, allColumns, null, null, null, null, null);
 
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            User user = cursorToUser(cursor);
+            users.add(user);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return users;
+    }
 }
