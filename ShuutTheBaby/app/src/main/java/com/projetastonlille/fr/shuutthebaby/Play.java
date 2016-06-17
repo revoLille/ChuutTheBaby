@@ -8,6 +8,7 @@ import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
@@ -23,7 +24,7 @@ public class Play extends Menu{
     int paused;
     //Declaration des listes
     private Map<String, Integer> _soundMap = new HashMap<>();
-    private Map<String, Integer> _timeMap = new HashMap<>();
+    private Map<String, Integer> _timeMap = new LinkedHashMap<>();
 //    private Map<String, Integer> timeMap; // Liste en bonus avec Timer ;)
     private Timer _timer = null;
     @Override
@@ -45,6 +46,7 @@ public class Play extends Menu{
         _timeMap.put(getResources().getString(R.string.time_2hour), 1000*60*60*2);
         _timeMap.put(getResources().getString(R.string.time_4hour), 1000*60*60*4);
         _timeMap.put(getResources().getString(R.string.time_8hour), 1000*60*60*8);
+
 ///Spinner pour le Timer
         final Spinner timeSpinner = (Spinner) findViewById(R.id.timeSpinner);
         List<String> times = new ArrayList<>(_timeMap.keySet());
