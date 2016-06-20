@@ -31,14 +31,11 @@ public class Register extends Menu  {
         buttonRegisterToDatabase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
 
+                Register.this.addUser();
                
             }
-=======
-                Register.this.addUser();
-                            }
->>>>>>> d683e1eb562f4f18446962c6eb516da77a67d65a
+
         });
 
     }
@@ -67,14 +64,13 @@ public class Register extends Menu  {
         datasource.createUser(user);
         datasource.close();
 
-        System.out.println(user.toString());
-        String logTest = login.getText().toString();
-        String pwdTest = pwd.getText().toString();
-        String mailTest = email.getText().toString();
-        String fnTest = fn.getText().toString();
-        String lnTest = ln.getText().toString();
-
-        System.out.println(logTest);
+        //System.out.println(user.toString());
+        //String logTest = login.getText().toString();
+        //String pwdTest = pwd.getText().toString();
+        //String mailTest = email.getText().toString();
+        //String fnTest = fn.getText().toString();
+        //String lnTest = ln.getText().toString();
+        //System.out.println(logTest);
     return 1;
     }
 }
