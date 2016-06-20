@@ -1,11 +1,12 @@
 package com.projetastonlille.fr.shuutthebaby.database;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
  * Created by Pierre on 15/06/2016.
  */
-public class Child {
+public class Child implements Serializable{
 
     private int id;
     private String first_name_child;

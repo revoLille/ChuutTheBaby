@@ -60,6 +60,7 @@ public class Register extends Menu  {
         user.setFirst_name(fnString);
         user.setLast_name(lnString);
 
+
         datasource.open();
         datasource.createUser(user);
         datasource.close();
