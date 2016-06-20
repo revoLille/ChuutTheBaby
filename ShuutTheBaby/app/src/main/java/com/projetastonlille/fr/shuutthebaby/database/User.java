@@ -1,9 +1,11 @@
 package com.projetastonlille.fr.shuutthebaby.database;
 
+import java.io.Serializable;
+
 /**
  * Created by Pierre on 09/06/2016.
  */
-public class User {
+public class User implements Serializable{
 
     private int id;
     private String login;
