@@ -47,14 +47,14 @@ public class UsersDataSource {
         return user;
     }
 
-    public User createUser (String user){
+    public User createUser (User user){
 
         ContentValues values = new ContentValues();
-        values.put (Database.COLUMN_LOGIN, user);
-        values.put (Database.COLUMN_PASSWORD, user);
-        values.put (Database.COLUMN_EMAIL, user);
-        values.put (Database.COLUMN_FIRSTNAME, user);
-        values.put (Database.COLUMN_LASTNAME, user);
+        values.put (Database.COLUMN_LOGIN, user.getLogin());
+        values.put (Database.COLUMN_PASSWORD, user.getPassword());
+        values.put (Database.COLUMN_EMAIL, user.getEmail());
+        values.put (Database.COLUMN_FIRSTNAME, user.getFirst_name());
+        values.put (Database.COLUMN_LASTNAME, user.getLast_name());
 
 
         int insertId = (int) database.insert(Database.TABLE_COMMENTS_USER, null, values);
